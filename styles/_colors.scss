@@ -2,16 +2,14 @@
     // main
     @include defineColor(--color-primary-light, #F7C9F3);
     @include defineColor(--color-primary-dark, #4180F6);
+    @include defineColor(--bg-color, #fff2fd);
 }
-
-// [data-theme] {
-    
-// }
 
 @supports(--css: variables) {
     [data-theme="dark"] {
         // main
         @include defineColor(--color-primary-light, #EE3EFE);
         @include defineColor(--color-primary-dark, #2E32FB);
+        @include defineColor(--bg-color, #120031);
     }
 }
