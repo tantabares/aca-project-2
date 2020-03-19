@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: $font-family-main;
+    color: $color-font;
+    background-image: linear-gradient(270deg, var(--color-primary-light), var(--color-primary-dark));
+}
