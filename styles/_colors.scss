@@ -1,15 +1,23 @@
 :root, [data-theme="default"] {
     // main
-    @include defineColor(--color-primary-light, #F7C9F3);
-    @include defineColor(--color-primary-dark, #4180F6);
+    @include defineColor(--color-primary-light, #f7c9f3);
+    @include defineColor(--color-primary-dark, #4180f6);
     @include defineColor(--bg-color, #fff2fd);
+    @include defineColor(--main-button-hover, #e6bbe2);
+    @include defineColor(--main-button-hover-box, #997d97);
+    @include defineColor(--color-link, #110038);
+    @include defineColor(--color-button-hover-border, #110038);
 }
 
 @supports(--css: variables) {
     [data-theme="dark"] {
         // main
-        @include defineColor(--color-primary-light, #EE3EFE);
-        @include defineColor(--color-primary-dark, #2E32FB);
+        @include defineColor(--color-primary-light, #ee3efe);
+        @include defineColor(--color-primary-dark, #2e32fb);
         @include defineColor(--bg-color, #120031);
+        @include defineColor(--main-button-hover, #ce36db);
+        @include defineColor(--main-button-hover-box, #a72cb3);
+        @include defineColor(--color-link, #ffffff);
+        @include defineColor(--color-button-hover-border, #110038);
     }
 }

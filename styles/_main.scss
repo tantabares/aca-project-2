@@ -24,3 +24,67 @@ body {
     padding: 0 0 0 0.5rem;
     overflow: hidden;
 }
+
+.gif-container {
+    max-width: 74.63rem;
+    margin: 0 auto;
+}
+
+.gif-header {
+
+    margin: 0 0 1rem 0;
+
+    .gif-header-cont {
+        margin: 2.19rem 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .gif-header-cont__right {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            right: 0;
+            top: 50%;
+            width: 26.28rem;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.gif-search, .gif-suggested, .gif-trending {
+    margin: 0 0 4rem 0;
+}
+
+.gif-button__main {
+    background-color: var(--color-primary-light);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $color-white;
+    height: 2.25rem;
+
+    line-height: 2.25rem;
+    color: $color-font-dark;
+    align-content: center;
+    padding: 0 1.3rem;
+
+    &:hover {
+        background-color: var(--main-button-hover);
+        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
+        cursor: pointer;
+    }
+}
+
+.gif-header__link {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    color: var(--color-link);
+    align-content: center;
+    border: 1px solid transparent;
+    padding: 0 0.2rem;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px dashed var(--color-link);
+    }
+}
