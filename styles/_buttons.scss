@@ -1,0 +1,64 @@
+.gif-button__main {
+    background-color: var(--color-primary-light);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $color-white;
+    height: 2.25rem;
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 2.25rem;
+    color: $color-font-dark;
+    align-content: center;
+    padding: 0 1.3rem;
+
+    &:hover {
+        background-color: var(--main-button-hover);
+        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
+        cursor: pointer;
+        outline: 1px dotted $color-font-dark;
+        outline-offset: -0.2rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    .icon {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+
+        img {
+            padding: 0 0.63rem 0 0;
+        }
+    }
+}
+
+.gif-header__button {
+    &:hover .gif-button__main {
+        background-color: var(--main-button-hover);
+        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
+        cursor: pointer;
+        outline: 1px dotted $color-font-dark;
+        outline-offset: -0.2rem;
+    }
+}
+
+.square {
+    padding: 0;
+    width: 2.25rem;
+}
+
+.gif-header__link {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    color: var(--color-link);
+    align-content: center;
+    border: 1px solid transparent;
+    padding: 0 0.2rem;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px dotted var(--color-link);
+    }
+}

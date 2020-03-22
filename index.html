@@ -20,11 +20,13 @@
                 </div>
                 <div class="gif-header-cont__right">
                     <div class="gif-header__button">
-                        <div class="gif-button__main">Crear Guifos</div>
+                        <button class="gif-button__main">Crear Guifos</button>
                     </div>
                     <div class="gif-header__button" style="display: flex;">
-                        <div class="gif-button__main">Elegir Tema</div>
-                        <div class="gif-button__main" style="padding: 0 1rem;">x</div>
+                        <button class="gif-button__main">Elegir Tema</button>
+                        <button class="gif-button__main square">
+                            <img src="assets/dropdown.svg" alt="Dropdown">
+                        </button>
                     </div>
                     <div class="gif-header__link"><span style="text-decoration: underline;">M</span>is Guifos</div>
                 </div>
@@ -34,7 +36,15 @@
 
     <section class="gif-search">
         <div class="gif-container">
-            <h1>Search Section</h1>
+            <div class="gif-searchbox">
+                <div class="gif-div__title section-title">Buscar</div>
+                <div class="gif-searchform">
+                    <form action="#">
+                        <input type="text" placeholder="Busca gifs, hashtags, temas, busca todo lo que quieras.." id="search" name="search">
+                        <button type="submit" class="gif-button__main search"><span class="icon"><img src="assets/lupa.svg" alt="Search icon"></span>Buscar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 

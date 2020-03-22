@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap&subset=latin-ext");
 :root, [data-theme="default"] {
   --color-primary-light: #f7c9f3;
   --color-primary-dark: #4180f6;
@@ -6,7 +6,9 @@
   --main-button-hover: #e6bbe2;
   --main-button-hover-box: #997d97;
   --color-link: #110038;
-  --color-button-hover-border: #110038; }
+  --color-button-hover-border: #110038;
+  --box-color: #e6e6e6;
+  --box-color-shadow1: #b4b4b4; }
 
 @supports (--css: variables) {
   [data-theme="dark"] {
@@ -16,7 +18,9 @@
     --main-button-hover: #ce36db;
     --main-button-hover-box: #a72cb3;
     --color-link: #ffffff;
-    --color-button-hover-border: #110038; } }
+    --color-button-hover-border: #110038;
+    --box-color: #b4b4b4;
+    --box-color-shadow1: #8f8f8f; } }
 * {
   margin: 0;
   padding: 0;
@@ -30,22 +34,29 @@ body {
 .gif-div__title {
   position: relative;
   top: 0;
-  height: 1.44rem;
+  height: 1.5rem;
   box-shadow: 0 1px 0 0 #110038;
   background-image: linear-gradient(270deg, var(--color-primary-light), var(--color-primary-dark));
   font-size: 0.75rem;
-  line-height: 1.44rem;
+  line-height: 1.5rem;
   color: #ffffff;
   letter-spacing: 0;
   padding: 0 0 0 0.5rem;
   overflow: hidden; }
+
+.section-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: none;
+  margin: 0.2rem;
+  top: 0.2rem; }
 
 .gif-container {
   max-width: 74.63rem;
   margin: 0 auto; }
 
 .gif-header {
-  margin: 0 0 1rem 0; }
+  margin: 0 0 1.5rem 0; }
   .gif-header .gif-header-cont {
     margin: 2.19rem 0 0 0;
     display: flex;
@@ -56,8 +67,8 @@ body {
       display: flex;
       justify-content: space-between;
       right: 0;
-      top: 50%;
       width: 26.28rem;
+      top: 50%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
 
@@ -69,6 +80,8 @@ body {
   border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #ffffff;
   height: 2.25rem;
+  font-family: inherit;
+  font-size: inherit;
   line-height: 2.25rem;
   color: #110038;
   align-content: center;
@@ -76,7 +89,28 @@ body {
   .gif-button__main:hover {
     background-color: var(--main-button-hover);
     box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: 1px dotted #110038;
+    outline-offset: -0.2rem; }
+  .gif-button__main:focus {
+    outline: none; }
+  .gif-button__main .icon {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+    .gif-button__main .icon img {
+      padding: 0 0.63rem 0 0; }
+
+.gif-header__button:hover .gif-button__main {
+  background-color: var(--main-button-hover);
+  box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 #ffffff;
+  cursor: pointer;
+  outline: 1px dotted #110038;
+  outline-offset: -0.2rem; }
+
+.square {
+  padding: 0;
+  width: 2.25rem; }
 
 .gif-header__link {
   height: 2.25rem;
@@ -87,6 +121,36 @@ body {
   padding: 0 0.2rem; }
   .gif-header__link:hover {
     cursor: pointer;
-    border: 1px dashed var(--color-link); }
+    border: 1px dotted var(--color-link); }
+
+.gif-searchbox {
+  background-color: var(--box-color);
+  box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff; }
+  .gif-searchbox .gif-searchform {
+    padding: 0.75rem 1.2rem; }
+    .gif-searchbox .gif-searchform form {
+      display: flex;
+      justify-content: space-between;
+      position: relative; }
+      .gif-searchbox .gif-searchform form input {
+        max-width: 88%;
+        width: 100%;
+        margin: 0 0.5rem 0 0;
+        font-family: inherit;
+        font-size: inherit;
+        height: 3rem;
+        padding: 0 0 0 1rem;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        color: #110038; }
+        .gif-searchbox .gif-searchform form input::placeholder {
+          color: #b4b4b4; }
+        .gif-searchbox .gif-searchform form input:focus {
+          outline: none; }
+      .gif-searchbox .gif-searchform form .search {
+        padding: 0 0.63rem 0 1.13rem;
+        position: absolute;
+        right: 0;
+        top: 13%; }
 
 /*# sourceMappingURL=styles.css.map */

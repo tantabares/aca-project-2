@@ -7,6 +7,8 @@
     @include defineColor(--main-button-hover-box, #997d97);
     @include defineColor(--color-link, #110038);
     @include defineColor(--color-button-hover-border, #110038);
+    @include defineColor(--box-color, #e6e6e6);
+    @include defineColor(--box-color-shadow1, #b4b4b4);
 }
 
 @supports(--css: variables) {
@@ -19,5 +21,7 @@
         @include defineColor(--main-button-hover-box, #a72cb3);
         @include defineColor(--color-link, #ffffff);
         @include defineColor(--color-button-hover-border, #110038);
+        @include defineColor(--box-color, #b4b4b4);
+        @include defineColor(--box-color-shadow1, #8f8f8f);
     }
 }

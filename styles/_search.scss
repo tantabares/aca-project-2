@@ -1,0 +1,43 @@
+.gif-searchbox {
+    background-color: var(--box-color);
+    box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 $color-white;
+
+    .gif-searchform {
+        padding: 0.75rem 1.2rem;
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            input {
+                max-width: 88%;
+                width: 100%;
+                margin: 0 0.5rem 0 0;
+
+                font-family: inherit;
+                font-size: inherit;
+                height: 3rem;
+                padding: 0 0 0 1rem;
+                border: 1px solid $color-sbox-border;
+                box-shadow: inset -2px -2px 0 0 $color-sbox-shadow, inset 2px 2px 0 0 $color-black;
+                color: $color-font-dark;
+
+                &::placeholder {
+                    color: $color-sbox-placeholder;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .search {
+                padding: 0 0.63rem 0 1.13rem;
+                position: absolute;
+                right: 0;
+                top: 13%;
+            }
+        }
+    }
+}

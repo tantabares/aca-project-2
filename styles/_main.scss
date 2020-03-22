@@ -13,16 +13,24 @@ body {
 .gif-div__title {
     position: relative;
     top: 0;
-    height: 1.44rem;
+    height: 1.5rem;
     box-shadow: 0 1px 0 0 $color-font-dark;
     background-image: linear-gradient(270deg, var(--color-primary-light), var(--color-primary-dark));
 
     font-size: 0.75rem;
-    line-height: 1.44rem;
+    line-height: 1.5rem;
     color: $color-font;
     letter-spacing: 0;
     padding: 0 0 0 0.5rem;
     overflow: hidden;
+}
+
+.section-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    box-shadow: none;
+    margin: 0.2rem;
+    top: 0.2rem;
 }
 
 .gif-container {
@@ -31,8 +39,7 @@ body {
 }
 
 .gif-header {
-
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
 
     .gif-header-cont {
         margin: 2.19rem 0 0 0;
@@ -45,8 +52,8 @@ body {
             display: flex;
             justify-content: space-between;
             right: 0;
-            top: 50%;
             width: 26.28rem;
+            top: 50%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
@@ -55,36 +62,4 @@ body {
 
 .gif-search, .gif-suggested, .gif-trending {
     margin: 0 0 4rem 0;
-}
-
-.gif-button__main {
-    background-color: var(--color-primary-light);
-    border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $color-white;
-    height: 2.25rem;
-
-    line-height: 2.25rem;
-    color: $color-font-dark;
-    align-content: center;
-    padding: 0 1.3rem;
-
-    &:hover {
-        background-color: var(--main-button-hover);
-        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
-        cursor: pointer;
-    }
-}
-
-.gif-header__link {
-    height: 2.25rem;
-    line-height: 2.25rem;
-    color: var(--color-link);
-    align-content: center;
-    border: 1px solid transparent;
-    padding: 0 0.2rem;
-
-    &:hover {
-        cursor: pointer;
-        border: 1px dashed var(--color-link);
-    }
 }
