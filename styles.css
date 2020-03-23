@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap&subset=latin-ext");
+/* line 1, styles/_colors.scss */
 :root, [data-theme="default"] {
   --color-primary-light: #f7c9f3;
   --color-primary-dark: #4180f6;
@@ -13,6 +14,7 @@
   --button-color-theme-inac: #f0f0f0; }
 
 @supports (--css: variables) {
+  /* line 17, styles/_colors.scss */
   [data-theme="dark"] {
     --color-primary-light: #ee3efe;
     --color-primary-dark: #2e32fb;
@@ -25,16 +27,19 @@
     --box-color: #b4b4b4;
     --box-color-shadow1: #8f8f8f;
     --button-color-theme-inac: #cccccc; } }
+/* line 1, styles/_main.scss */
 * {
   margin: 0;
   padding: 0;
   border: none; }
 
+/* line 7, styles/_main.scss */
 body {
   font-family: "Chakra Petch", sans-serif;
   color: #ffffff;
   background-color: var(--bg-color); }
 
+/* line 13, styles/_main.scss */
 .gif-div__title {
   height: 1.5rem;
   box-shadow: 0 1px 0 0 #110038;
@@ -46,24 +51,29 @@ body {
   padding: 0 0 0 0.5rem;
   overflow: hidden; }
 
+/* line 26, styles/_main.scss */
 .section-title {
   font-size: 0.88rem;
   font-weight: 600;
   box-shadow: none;
   margin: 0.2rem; }
 
+/* line 33, styles/_main.scss */
 .gif-center-helper {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
+/* line 39, styles/_main.scss */
 .gif-container {
   max-width: 74.63rem;
   margin: 0 auto; }
 
+/* line 44, styles/_main.scss */
 .gif-search, .gif-suggested, .gif-trending {
   margin: 0 0 4rem 0; }
 
+/* line 1, styles/_buttons.scss */
 .gif-button__main {
   background-color: var(--color-primary-light);
   border: 1px solid #110038;
@@ -75,23 +85,29 @@ body {
   color: var(--color-font);
   align-content: center;
   padding: 0 1.3rem; }
+  /* line 14, styles/_buttons.scss */
   .gif-button__main:hover {
     background-color: var(--main-button-hover);
     cursor: pointer;
     outline: 1px dotted #110038;
     outline-offset: -0.25rem;
     box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff; }
+  /* line 22, styles/_buttons.scss */
   .gif-button__main:focus {
     outline: none; }
+  /* line 26, styles/_buttons.scss */
   .gif-button__main .icon {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
+    /* line 31, styles/_buttons.scss */
     .gif-button__main .icon svg {
       padding: 0 0.63rem 0 0; }
+      /* line 34, styles/_buttons.scss */
       .gif-button__main .icon svg #gifOS_resultados-de-busqueda {
         fill: #110038; }
 
+/* line 41, styles/_buttons.scss */
 .clicked {
   background-color: var(--main-button-hover);
   cursor: pointer;
@@ -99,13 +115,16 @@ body {
   outline-offset: -0.25rem;
   box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff; }
 
+/* line 49, styles/_buttons.scss */
 .git-button__inactive {
   color: var(--box-color-shadow1);
   background-color: var(--box-color);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
+  /* line 57, styles/_buttons.scss */
   .git-button__inactive .icon svg #gifOS_resultados-de-busqueda {
     fill: var(--box-color-shadow1); }
+  /* line 63, styles/_buttons.scss */
   .git-button__inactive:hover {
     outline: none;
     cursor: default;
@@ -113,15 +132,18 @@ body {
     background-color: var(--box-color);
     box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
 
+/* line 73, styles/_buttons.scss */
 .gif-header-button:hover .gif-button__main {
   background-color: var(--main-button-hover);
   box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff;
   cursor: pointer;
   outline: 1px dotted #110038;
   outline-offset: -0.25rem; }
+/* line 81, styles/_buttons.scss */
 .gif-header-button:focus {
   outline: none; }
 
+/* line 86, styles/_buttons.scss */
 .gif-theme-button {
   color: #110038;
   line-height: 2.25rem;
@@ -131,35 +153,47 @@ body {
   background: var(--button-color-theme-inac);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
+  /* line 96, styles/_buttons.scss */
   .gif-theme-button:hover {
     cursor: pointer; }
 
+/* line 102, styles/_buttons.scss */
 .gif-option-day:hover {
   background-color: #fff4fd;
   border: 1px solid #cca6c9;
   box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #ffffff; }
 
+/* line 110, styles/_buttons.scss */
 .gif-option-night:hover {
   color: #ffffff;
   background-color: #2e32fb;
   border: 1px solid rgba(51, 53, 143, 0.2);
   box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #ffffff; }
 
+/* line 118, styles/_buttons.scss */
 .droparrow {
   padding: 0;
   width: 2.25rem; }
+  /* line 123, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-b {
     fill: var(--color-font); }
+  /* line 127, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-w {
     fill: var(--color-font-r); }
 
+/* line 1, styles/_header.scss */
 .gif-header {
-  margin: 0 0 1.5rem 0; }
+  margin: 0 0 1.5rem 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color); }
+  /* line 7, styles/_header.scss */
   .gif-header .gif-header-cont {
     margin: 2.19rem 0 0 0;
     display: flex;
     justify-content: space-between;
     position: relative; }
+    /* line 13, styles/_header.scss */
     .gif-header .gif-header-cont .gif-header-cont__right {
       position: absolute;
       display: flex;
@@ -170,6 +204,7 @@ body {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
 
+/* line 26, styles/_header.scss */
 .gif-header__link {
   height: 2.25rem;
   line-height: 2.25rem;
@@ -177,14 +212,17 @@ body {
   align-content: center;
   border: 1px solid transparent;
   padding: 0 0.2rem; }
+  /* line 34, styles/_header.scss */
   .gif-header__link:hover {
     cursor: pointer;
     outline: 1px dotted var(--color-font);
     outline-offset: -0.25rem; }
 
+/* line 41, styles/_header.scss */
 .gif-dropdown {
   position: relative;
   overflow: hidden; }
+  /* line 45, styles/_header.scss */
   .gif-dropdown .gif-dropdown__options {
     position: absolute;
     width: 100%;
@@ -193,21 +231,31 @@ body {
     box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff;
     padding: 0 0 0.315rem 0;
     opacity: 0; }
+  /* line 55, styles/_header.scss */
   .gif-dropdown .show {
     opacity: 1; }
 
+/* line 60, styles/_header.scss */
 .show {
   overflow: visible; }
 
+/* line 64, styles/_header.scss */
+.bottom-line {
+  border-bottom: solid 1px var(--main-button-hover-box); }
+
+/* line 1, styles/_search.scss */
 .gif-searchbox {
   background-color: var(--box-color);
   box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff;
   padding-top: 0.01rem; }
+  /* line 6, styles/_search.scss */
   .gif-searchbox .gif-searchform {
     padding: 0.75rem 1.2rem; }
+    /* line 9, styles/_search.scss */
     .gif-searchbox .gif-searchform form {
       display: flex;
       justify-content: center; }
+      /* line 13, styles/_search.scss */
       .gif-searchbox .gif-searchform form input {
         max-width: 88%;
         width: 100%;
@@ -219,10 +267,13 @@ body {
         border: 1px solid #979797;
         box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
         color: #110038; }
+        /* line 26, styles/_search.scss */
         .gif-searchbox .gif-searchform form input::placeholder {
           color: #b4b4b4; }
+        /* line 30, styles/_search.scss */
         .gif-searchbox .gif-searchform form input:focus {
           outline: none; }
+      /* line 35, styles/_search.scss */
       .gif-searchbox .gif-searchform form .search {
         padding: 0 0.88rem 0 0.63rem; }
 

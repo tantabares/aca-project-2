@@ -1,5 +1,8 @@
 .gif-header {
     margin: 0 0 1.5rem 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
 
     .gif-header-cont {
         margin: 2.19rem 0 0 0;
@@ -56,4 +59,8 @@
 
 .show {
     overflow: visible;
+}
+
+.bottom-line {
+    border-bottom: solid 1px var(--main-button-hover-box);
 }
