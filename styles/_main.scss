@@ -11,8 +11,6 @@ body {
 }
 
 .gif-div__title {
-    position: relative;
-    top: 0;
     height: 1.5rem;
     box-shadow: 0 1px 0 0 $color-font-dark;
     background-image: linear-gradient(270deg, var(--color-primary-light), var(--color-primary-dark));
@@ -30,34 +28,17 @@ body {
     font-weight: 600;
     box-shadow: none;
     margin: 0.2rem;
-    top: 0.2rem;
+}
+
+.gif-center-helper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gif-container {
     max-width: 74.63rem;
     margin: 0 auto;
-}
-
-.gif-header {
-    margin: 0 0 1.5rem 0;
-
-    .gif-header-cont {
-        margin: 2.19rem 0 0 0;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        .gif-header-cont__right {
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            right: 0;
-            width: 26.28rem;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-    }
 }
 
 .gif-search, .gif-suggested, .gif-trending {

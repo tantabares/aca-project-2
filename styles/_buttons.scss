@@ -1,22 +1,22 @@
 .gif-button__main {
     background-color: var(--color-primary-light);
-    border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 $color-white;
+    border: 1px solid $color-font-dark;
+    box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 $color-white;
     height: 2.25rem;
 
     font-family: inherit;
     font-size: inherit;
     line-height: 2.25rem;
-    color: $color-font-dark;
+    color: var(--color-font);
     align-content: center;
     padding: 0 1.3rem;
 
     &:hover {
         background-color: var(--main-button-hover);
-        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
         cursor: pointer;
         outline: 1px dotted $color-font-dark;
-        outline-offset: -0.2rem;
+        outline-offset: -0.25rem;
+        box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 $color-white;
     }
 
     &:focus {
@@ -28,37 +28,104 @@
         height: 100%;
         vertical-align: middle;
 
-        img {
+        svg {
             padding: 0 0.63rem 0 0;
+
+            #gifOS_resultados-de-busqueda {
+                fill: $color-font-dark;
+            }
         }
     }
 }
 
-.gif-header__button {
-    &:hover .gif-button__main {
-        background-color: var(--main-button-hover);
-        box-shadow: inset -1px -1px 0 0 var(--main-button-hover), inset 1px 1px 0 0 $color-white;
-        cursor: pointer;
-        outline: 1px dotted $color-font-dark;
-        outline-offset: -0.2rem;
+.clicked {
+    background-color: var(--main-button-hover);
+    cursor: pointer;
+    outline: 1px dotted $color-font-dark;
+    outline-offset: -0.25rem;
+    box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 $color-white;
+}
+
+.git-button__inactive {
+    color: var(--box-color-shadow1);
+    background-color: var(--box-color);
+    border: 1px solid $color-sbox-shadow-inactive;
+    box-shadow: inset -1px -1px 0 0 $color-sbox-placeholder, inset 1px 1px 0 0 $color-white;
+
+    .icon {
+        svg {
+            #gifOS_resultados-de-busqueda {
+                fill: var(--box-color-shadow1);
+            }
+        }
+    }
+
+    &:hover {
+        outline: none;
+        cursor: default;
+        box-shadow: none;
+        background-color: var(--box-color);
+        box-shadow: inset -1px -1px 0 0 $color-sbox-placeholder, inset 1px 1px 0 0 $color-white;
     }
 }
 
-.square {
-    padding: 0;
-    width: 2.25rem;
+.gif-header-button {
+    &:hover .gif-button__main {
+        background-color: var(--main-button-hover);
+        box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 $color-white;
+        cursor: pointer;
+        outline: 1px dotted $color-font-dark;
+        outline-offset: -0.25rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
-.gif-header__link {
-    height: 2.25rem;
+.gif-theme-button {
+    color: $color-font-dark;
     line-height: 2.25rem;
-    color: var(--color-link);
-    align-content: center;
-    border: 1px solid transparent;
-    padding: 0 0.2rem;
+    height: 2.25rem;
+    padding: 0 0 0 1rem;
+    margin: 0.63rem 0.63rem 0.315rem 0.63rem;
+    background: var(--button-color-theme-inac);
+    border: 1px solid $color-sbox-shadow-inactive;
+    box-shadow: inset -1px -1px 0 0 $color-sbox-placeholder, inset 1px 1px 0 0 $color-white;
 
     &:hover {
         cursor: pointer;
-        border: 1px dotted var(--color-link);
+    }
+}
+
+.gif-option-day {
+    &:hover {
+        background-color: $color-day;
+        border: 1px solid $color-day-border;
+        box-shadow: inset -1px -1px 0 0 $color-shadow-theme, inset 1px 1px 0 0 $color-white;
+    }
+}
+
+.gif-option-night {
+    &:hover {
+        color: $color-font;
+        background-color: $color-night;
+        border: 1px solid $color-night-border;
+        box-shadow: inset -1px -1px 0 0 $color-shadow-theme, inset 1px 1px 0 0 $color-white;
+    }
+}
+
+.droparrow {
+    padding: 0;
+    width: 2.25rem;
+
+    svg {
+        #gifOS_arrow-b {
+            fill: var(--color-font);
+        }
+
+        #gifOS_arrow-w {
+            fill: var(--color-font-r);
+        }
     }
 }

@@ -5,10 +5,12 @@
     @include defineColor(--bg-color, #fff2fd);
     @include defineColor(--main-button-hover, #e6bbe2);
     @include defineColor(--main-button-hover-box, #997d97);
-    @include defineColor(--color-link, #110038);
+    @include defineColor(--color-font, #110038);
+    @include defineColor(--color-font-r, #ffffff);
     @include defineColor(--color-button-hover-border, #110038);
     @include defineColor(--box-color, #e6e6e6);
     @include defineColor(--box-color-shadow1, #b4b4b4);
+    @include defineColor(--button-color-theme-inac, #f0f0f0);
 }
 
 @supports(--css: variables) {
@@ -19,9 +21,11 @@
         @include defineColor(--bg-color, #120031);
         @include defineColor(--main-button-hover, #ce36db);
         @include defineColor(--main-button-hover-box, #a72cb3);
-        @include defineColor(--color-link, #ffffff);
+        @include defineColor(--color-font, #ffffff);
+        @include defineColor(--color-font-r, #110038);
         @include defineColor(--color-button-hover-border, #110038);
         @include defineColor(--box-color, #b4b4b4);
         @include defineColor(--box-color-shadow1, #8f8f8f);
-    }
+        @include defineColor(--button-color-theme-inac, #cccccc);
+}
 }

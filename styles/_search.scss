@@ -1,14 +1,14 @@
 .gif-searchbox {
     background-color: var(--box-color);
     box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 $color-white;
+    padding-top: 0.01rem;
 
     .gif-searchform {
         padding: 0.75rem 1.2rem;
 
         form {
             display: flex;
-            justify-content: space-between;
-            position: relative;
+            justify-content: center;
 
             input {
                 max-width: 88%;
@@ -33,10 +33,7 @@
             }
 
             .search {
-                padding: 0 0.63rem 0 1.13rem;
-                position: absolute;
-                right: 0;
-                top: 13%;
+                padding: 0 0.88rem 0 0.63rem;
             }
         }
     }

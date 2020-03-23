@@ -8,25 +8,46 @@
 
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-theme="default">
     <header class="gif-header">
         <div class="gif-div__title">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</div>
         <div class="gif-container">
             <div class="gif-header-cont">
                 <div class="gif-header__logo">
                     <a href="http://www.google.com">
-                        <img src="assets/gifOF_logo.png" alt="GifOS Logo">
+                        <img id="gifOS_page-logo" src="assets/gifOF_logo.png" alt="GifOS Logo">
                     </a>
                 </div>
                 <div class="gif-header-cont__right">
-                    <div class="gif-header__button">
+                    <div class="gif-header-button">
                         <button class="gif-button__main">Crear Guifos</button>
                     </div>
-                    <div class="gif-header__button" style="display: flex;">
-                        <button class="gif-button__main">Elegir Tema</button>
-                        <button class="gif-button__main square">
-                            <img src="assets/dropdown.svg" alt="Dropdown">
-                        </button>
+                    <div id="gifOS_dropdown" class="gif-dropdown">
+                        <div class="gif-header-button" style="display: flex;">
+                            <button class="gif-button__main dropd">Elegir Tema</button>
+                            <button class="gif-button__main dropd droparrow">
+                                <svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>dropdown</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="gifOS_misguifos" transform="translate(-1184.000000, -83.000000)">
+                                            <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+                                                <g id="dropdown_tema_normal" transform="translate(1038.000000, 67.000000)">
+                                                    <g id="dropdown" transform="translate(150.000000, 18.000000) rotate(-270.000000) translate(-150.000000, -18.000000) translate(147.000000, 13.000000)">
+                                                        <path id="gifOS_arrow-b" d="M4,5 L4,6 L3,6 L3,7 L2,7 L2,8 L1,8 L1,9 L0,9 L0,0 L1,0 L1,1 L2,1 L2,2 L3,2 L3,3 L4,3 L4,4 L5,4 L5,5 L4,5 Z" id="back-copy" fill="#110038"></path>
+                                                        <path id="gifOS_arrow-w" d="M1,9 L1,8 L2,8 L2,7 L3,7 L3,6 L4,6 L4,5 L6,5 L6,6 L5,6 L5,7 L4,7 L4,8 L3,8 L3,9 L2,9 L2,10 L1,10 L1,9 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="gifOS_theme-options" class="gif-dropdown__options">
+                            <div class="gif-theme-button gif-option-day" data-val="default" data-logo="assets/gifOF_logo.png">Sailor Day</div>
+                            <div class="gif-theme-button gif-option-night" data-val="dark" data-logo="assets/gifOF_logo_dark.png">Sailor Night</div>
+                        </div>
                     </div>
                     <div class="gif-header__link"><span style="text-decoration: underline;">M</span>is Guifos</div>
                 </div>
@@ -41,7 +62,27 @@
                 <div class="gif-searchform">
                     <form action="#">
                         <input type="text" placeholder="Busca gifs, hashtags, temas, busca todo lo que quieras.." id="search" name="search">
-                        <button type="submit" class="gif-button__main search"><span class="icon"><img src="assets/lupa.svg" alt="Search icon"></span>Buscar</button>
+                        <div class="gif-center-helper">
+                            <button type="submit" class="gif-button__main search git-button__inactive" disabled>
+                                <span class="icon">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>lupa</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="gifOS_resultados-de-busqueda" transform="translate(-1190.000000, -198.000000)" fill="#000000" fill-rule="nonzero">
+                                                <g id="busqueda_inactive" transform="translate(100.000000, 143.000000)">
+                                                    <g id="boton-buscar_-active" transform="translate(1080.000000, 45.000000)">
+                                                        <g id="noun_Pixel-Search_644045" transform="translate(10.000000, 10.000000)">
+                                                            <path d="M7.11111111,1.77777778 C5.92592593,1.77777778 4.74074074,1.77777778 3.55555556,1.77777778 L3.55555556,-3.77475828e-15 C5.33333333,-3.77475828e-15 7.11111111,-3.77475828e-15 8.88888889,-3.77475828e-15 L8.88888889,1.77777778 L7.11111111,1.77777778 Z M10.6666667,3.55555556 L8.88888889,3.55555556 L8.88888889,1.77777778 L10.6666667,1.77777778 L10.6666667,3.55555556 Z M10.6666667,10.6666667 L12.4444444,10.6666667 L12.4444444,12.4444444 L10.6666667,12.4444444 L10.6666667,10.6666667 Z M8.88888889,8.88888889 L10.6666667,8.88888889 L10.6666667,10.6666667 L8.88888889,10.6666667 L8.88888889,8.88888889 Z M10.6666667,7.11111111 C10.6666667,5.92592593 10.6666667,4.74074074 10.6666667,3.55555556 L12.4444444,3.55555556 C12.4444444,5.33333333 12.4444444,7.11111111 12.4444444,8.88888889 L10.6666667,8.88888889 L10.6666667,7.11111111 Z M3.55555556,1.77777778 L3.55555556,3.55555556 L1.77777778,3.55555556 L1.77777778,1.77777778 L3.55555556,1.77777778 Z M12.4444444,12.4444444 L14.2222222,12.4444444 L14.2222222,14.2222222 L12.4444444,14.2222222 L12.4444444,12.4444444 Z M14.2222222,14.2222222 L16,14.2222222 L16,16 L14.2222222,16 L14.2222222,14.2222222 Z M5.33333333,10.6666667 C6.51851852,10.6666667 7.7037037,10.6666667 8.88888889,10.6666667 L8.88888889,12.4444444 C7.11111111,12.4444444 5.33333333,12.4444444 3.55555556,12.4444444 L3.55555556,10.6666667 L5.33333333,10.6666667 Z M1.77777778,5.33333333 C1.77777778,6.51851852 1.77777778,7.7037037 1.77777778,8.88888889 L-2.02171613e-13,8.88888889 C-2.02171613e-13,7.11111111 -2.02171613e-13,5.33333333 -2.02171613e-13,3.55555556 L1.77777778,3.55555556 L1.77777778,5.33333333 Z M1.77777778,8.88888889 L3.55555556,8.88888889 L3.55555556,10.6666667 L1.77777778,10.6666667 L1.77777778,8.88888889 Z" id="lupa"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>Buscar
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -61,4 +102,5 @@
     </section>
     
 </body>
+<script text="javascript" src="js/index.js"></script>
 </html>
