@@ -116,16 +116,16 @@ body {
   box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff; }
 
 /* line 49, styles/_buttons.scss */
-.git-button__inactive {
+.gif-button__inactive {
   color: var(--box-color-shadow1);
   background-color: var(--box-color);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
   /* line 57, styles/_buttons.scss */
-  .git-button__inactive .icon svg #gifOS_resultados-de-busqueda {
+  .gif-button__inactive .icon svg #gifOS_resultados-de-busqueda {
     fill: var(--box-color-shadow1); }
   /* line 63, styles/_buttons.scss */
-  .git-button__inactive:hover {
+  .gif-button__inactive:hover {
     outline: none;
     cursor: default;
     box-shadow: none;

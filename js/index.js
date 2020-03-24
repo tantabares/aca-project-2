@@ -1,6 +1,7 @@
 const BODY = document.body;
 const THEME_BUTTONS = document.getElementsByClassName('gif-theme-button')
 const THEME_DROPDOWN = document.getElementById('gifOS_dropdown')
+const SEARCHBOX = document.getElementById('gifOS_search-box')
 
 let changeTheme = function() {
     let currentTheme = BODY.dataset.theme
@@ -51,4 +52,16 @@ document.addEventListener('click', function(e){
     else 
         if (THEME_DROPDOWN.classList.contains('show'))
             toggleThemeDropdown()
+}, false)
+
+SEARCHBOX.addEventListener('keyup', function(e) {
+    let value = SEARCHBOX.value
+
+    if(value) {
+        document.getElementById('gifOS_search-submit').disabled = false
+        document.getElementById('gifOS_search-submit').classList.remove('gif-button__inactive')
+    } else {
+        document.getElementById('gifOS_search-submit').disabled = true
+        document.getElementById('gifOS_search-submit').classList.add('gif-button__inactive')
+    }
 }, false)
