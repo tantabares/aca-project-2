@@ -32,7 +32,7 @@
             padding: 0 0.63rem 0 0;
 
             #gifOS_resultados-de-busqueda {
-                fill: $color-font-dark;
+                fill: var(--color-font);
             }
         }
     }
@@ -84,6 +84,10 @@
 }
 
 .gif-theme-button {
+    font: inherit;
+    text-align: left;
+    display: inherit;
+    width: -webkit-fill-available;
     color: $color-font-dark;
     line-height: 2.25rem;
     height: 2.25rem;
@@ -95,6 +99,28 @@
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.gif-suggestion-button {
+    font: inherit;
+    text-align: left;
+    display: inherit;
+    width: 100%;
+    color: $color-font-dark;
+    line-height: 2.25rem;
+    height: 2.25rem;
+    margin: 0 0 0.63rem 0;
+    padding-left: 1rem;
+    background: var(--button-color-theme-inac);
+    border: 1px solid $color-sbox-shadow-inactive;
+    box-shadow: inset -1px -1px 0 0 $color-sbox-placeholder, inset 1px 1px 0 0 $color-white;
+
+    &:hover, &:focus {
+        cursor: pointer;
+        outline: 1px dotted #110038;
+        outline-offset: -0.25rem;
+        background-color: $color-box-hover;
     }
 }
 

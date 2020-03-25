@@ -4,11 +4,12 @@
     padding-top: 0.01rem;
 
     .gif-searchform {
-        padding: 0.75rem 1.2rem;
+        padding: 0.75rem 1.2rem 1rem 1.2rem;
+        box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 0 0 0 0 #ffffff;
 
         form {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
 
             input {
                 max-width: 88%;
@@ -34,7 +35,26 @@
 
             .search {
                 padding: 0 0.88rem 0 0.63rem;
+                min-width: 6.5rem;
             }
         }
+    }
+
+    .gif-suggestions {
+        display: none;
+        width: 85%;
+        position: absolute;
+        overflow: auto;
+        background-color: var(--box-color);
+        box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 $color-white;
+
+        .gif-suggestions-items {
+            padding: 1rem 8.3rem 0.37rem 1.2rem;
+            max-width: 86.6%;
+        }
+    }
+
+    .show {
+        display: block;
     }
 }

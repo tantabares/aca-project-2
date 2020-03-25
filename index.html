@@ -34,8 +34,8 @@
                                             <g id="nav-bar" transform="translate(1.000000, 1.000000)">
                                                 <g id="dropdown_tema_normal" transform="translate(1038.000000, 67.000000)">
                                                     <g id="dropdown" transform="translate(150.000000, 18.000000) rotate(-270.000000) translate(-150.000000, -18.000000) translate(147.000000, 13.000000)">
-                                                        <path id="gifOS_arrow-b" d="M4,5 L4,6 L3,6 L3,7 L2,7 L2,8 L1,8 L1,9 L0,9 L0,0 L1,0 L1,1 L2,1 L2,2 L3,2 L3,3 L4,3 L4,4 L5,4 L5,5 L4,5 Z" id="back-copy" fill="#110038"></path>
-                                                        <path id="gifOS_arrow-w" d="M1,9 L1,8 L2,8 L2,7 L3,7 L3,6 L4,6 L4,5 L6,5 L6,6 L5,6 L5,7 L4,7 L4,8 L3,8 L3,9 L2,9 L2,10 L1,10 L1,9 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                                        <path id="gifOS_arrow-b" d="M4,5 L4,6 L3,6 L3,7 L2,7 L2,8 L1,8 L1,9 L0,9 L0,0 L1,0 L1,1 L2,1 L2,2 L3,2 L3,3 L4,3 L4,4 L5,4 L5,5 L4,5 Z" fill="#110038"></path>
+                                                        <path id="gifOS_arrow-w" d="M1,9 L1,8 L2,8 L2,7 L3,7 L3,6 L4,6 L4,5 L6,5 L6,6 L5,6 L5,7 L4,7 L4,8 L3,8 L3,9 L2,9 L2,10 L1,10 L1,9 Z" fill="#FFFFFF"></path>
                                                     </g>
                                                 </g>
                                             </g>
@@ -45,8 +45,8 @@
                             </button>
                         </div>
                         <div id="gifOS_theme-options" class="gif-dropdown__options">
-                            <div class="gif-theme-button gif-option-day" data-val="default" data-logo="assets/gifOF_logo.png">Sailor Day</div>
-                            <div class="gif-theme-button gif-option-night" data-val="dark" data-logo="assets/gifOF_logo_dark.png">Sailor Night</div>
+                            <button class="gif-theme-button gif-option-day" data-val="default" data-logo="assets/gifOF_logo.png">Sailor Day</button>
+                            <button class="gif-theme-button gif-option-night" data-val="dark" data-logo="assets/gifOF_logo_dark.png">Sailor Night</button>
                         </div>
                     </div>
                     <div class="gif-header__link"><span style="text-decoration: underline;">M</span>is Guifos</div>
@@ -61,14 +61,14 @@
                 <div class="gif-div__title section-title">Buscar</div>
                 <div class="gif-searchform">
                     <form action="#">
-                        <input type="text" placeholder="Busca gifs, hashtags, temas, busca todo lo que quieras.." id="gifOS_search-box" name="search">
+                        <input type="text" placeholder="Busca gifs, hashtags, temas, busca todo lo que quieras.." id="gifOS_search-box" name="search" autocomplete="off">
                         <div class="gif-center-helper">
                             <button type="submit" class="gif-button__main search gif-button__inactive" id="gifOS_search-submit" disabled>
                                 <span class="icon">
                                     <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>lupa</title>
                                         <desc>Created with Sketch.</desc>
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <g id="gifOS_resultados-de-busqueda" transform="translate(-1190.000000, -198.000000)" fill="#000000" fill-rule="nonzero">
                                                 <g id="busqueda_inactive" transform="translate(100.000000, 143.000000)">
                                                     <g id="boton-buscar_-active" transform="translate(1080.000000, 45.000000)">
@@ -84,6 +84,10 @@
                             </button>
                         </div>
                     </form>
+                </div>
+                <div id="gifOS_suggestions" class="gif-suggestions">
+                    <div id="gifOS_suggestions-items" class="gif-suggestions-items">
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,6 +105,6 @@
         </div>
     </section>
 
+    <script type="module" src="js/index.js"></script>
 </body>
-<script text="javascript" src="js/index.js"></script>
 </html>
