@@ -67,6 +67,8 @@ gifOs.utils.populateSuggestions = function (query) {
                 gifOs.constants.SEARCH_SUGGESTIONS_ITEMS.innerHTML = html
                 if (!gifOs.constants.SEARCH_SUGGESTIONS.classList.contains('show'))
                     gifOs.constants.SEARCH_SUGGESTIONS.classList.add('show')
+            } else {
+                gifOs.constants.SEARCH_SUGGESTIONS.classList.remove('show')
             }
     }).catch((error) => {
         return error
@@ -94,7 +96,7 @@ gifOs.constants.SEARCHBOX.addEventListener('keyup', function (e) {
             gifOs.constants.SEARCH_SUBMIT.classList.remove('gif-button__inactive')
         }
 
-        if (value.length > 2)
+        if (value.length > 0)
             gifOs.utils.populateSuggestions(value)
 
         if (value.length < 3 && gifOs.constants.SEARCH_SUGGESTIONS.classList.contains('show'))

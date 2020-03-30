@@ -11,6 +11,9 @@
     @include defineColor(--box-color, #e6e6e6);
     @include defineColor(--box-color-shadow1, #b4b4b4);
     @include defineColor(--button-color-theme-inac, #f0f0f0);
+    @include defineColor(--section-title-border, #e6bbe2);
+    @include defineColor(--section-title-shadow, #80687d);
+    @include defineColor(--box-suggestion, #b4b4b4);
 }
 
 @supports(--css: variables) {
@@ -27,5 +30,8 @@
         @include defineColor(--box-color, #b4b4b4);
         @include defineColor(--box-color-shadow1, #8f8f8f);
         @include defineColor(--button-color-theme-inac, #cccccc);
-}
+        @include defineColor(--section-title-border, #2e32fb);
+        @include defineColor(--section-title-shadow, #110038);
+        @include defineColor(--box-suggestion, #5c5c5c);
+    }
 }

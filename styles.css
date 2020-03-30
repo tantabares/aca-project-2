@@ -11,10 +11,13 @@
   --color-button-hover-border: #110038;
   --box-color: #e6e6e6;
   --box-color-shadow1: #b4b4b4;
-  --button-color-theme-inac: #f0f0f0; }
+  --button-color-theme-inac: #f0f0f0;
+  --section-title-border: #e6bbe2;
+  --section-title-shadow: #80687d;
+  --box-suggestion: #b4b4b4; }
 
 @supports (--css: variables) {
-  /* line 17, styles/_colors.scss */
+  /* line 20, styles/_colors.scss */
   [data-theme="dark"] {
     --color-primary-light: #ee3efe;
     --color-primary-dark: #2e32fb;
@@ -26,7 +29,10 @@
     --color-button-hover-border: #110038;
     --box-color: #b4b4b4;
     --box-color-shadow1: #8f8f8f;
-    --button-color-theme-inac: #cccccc; } }
+    --button-color-theme-inac: #cccccc;
+    --section-title-border: #2e32fb;
+    --section-title-shadow: #110038;
+    --box-suggestion: #5c5c5c; } }
 /* line 1, styles/_main.scss */
 * {
   margin: 0;
@@ -73,6 +79,19 @@ body {
 /* line 45, styles/_main.scss */
 .gif-search, .gif-suggested, .gif-trending {
   margin: 0 0 4rem 0; }
+
+/* line 49, styles/_main.scss */
+.gif-section__title {
+  height: 2rem;
+  border: 1px solid var(--section-title-border);
+  box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 var(--section-title-shadow);
+  background-color: #fffafe;
+  font-size: 0.88rem;
+  line-height: 2rem;
+  color: #110038;
+  letter-spacing: 0;
+  padding: 0 0 0 0.5rem;
+  margin: 0 0 1rem 0; }
 
 /* line 1, styles/_buttons.scss */
 .gif-button__main {
@@ -305,17 +324,29 @@ body {
   /* line 43, styles/_search.scss */
   .gif-searchbox .gif-suggestions {
     display: none;
-    width: 85%;
     position: absolute;
     overflow: auto;
     background-color: var(--box-color);
     box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff; }
-    /* line 51, styles/_search.scss */
+    /* line 50, styles/_search.scss */
     .gif-searchbox .gif-suggestions .gif-suggestions-items {
       padding: 1rem 8.3rem 0.37rem 1.2rem;
       max-width: 86.6%; }
-  /* line 57, styles/_search.scss */
+  /* line 56, styles/_search.scss */
   .gif-searchbox .show {
     display: block; }
+
+/* line 1, styles/_suggestions.scss */
+.gif-suggestion-grid {
+  display: grid;
+  grid-template-columns: calc(25% - 0.75rem) calc(25% - 0.75rem) calc(25% - 0.75rem) calc(25% - 0.75rem);
+  gap: 1rem; }
+
+/* line 7, styles/_suggestions.scss */
+.gif-suggestion {
+  max-width: 18rem;
+  max-height: 19.56rem;
+  background: var(--box-color);
+  box-shadow: inset -2px -2px 0 0 var(--box-suggestion), inset 2px 2px 0 0 #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
