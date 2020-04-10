@@ -59,10 +59,10 @@ gifOs.utils.populateSuggestions = function (query) {
     result.then((response) => {
         return response.json()
     }).then(data => {
-            if(data.results.length > 0) {
-                max = data.results.length < max ? data.results.length : max
+            if(data.data.length > 0) {
+                max = data.data.length < max ? data.data.length : max
                 for(let i = 0; i < max; i++)
-                    html += '<button class="gif-suggestion-button">' + data.results[i] + '</button>'
+                    html += '<button class="gif-suggestion-button">' + data.data[i].name + '</button>'
 
                 gifOs.constants.SEARCH_SUGGESTIONS_ITEMS.innerHTML = html
                 if (!gifOs.constants.SEARCH_SUGGESTIONS.classList.contains('show'))
@@ -96,7 +96,7 @@ gifOs.constants.SEARCHBOX.addEventListener('keyup', function (e) {
             gifOs.constants.SEARCH_SUBMIT.classList.remove('gif-button__inactive')
         }
 
-        if (value.length > 0)
+        if (value.length > 2)
             gifOs.utils.populateSuggestions(value)
 
         if (value.length < 3 && gifOs.constants.SEARCH_SUGGESTIONS.classList.contains('show'))
