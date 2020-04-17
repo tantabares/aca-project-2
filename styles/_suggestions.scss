@@ -5,8 +5,32 @@
 }
 
 .gif-suggestion {
+    position: relative;
     max-width: 18rem;
     max-height: 19.56rem;
     background: var(--box-color);
     box-shadow: inset -2px -2px 0 0 var(--box-suggestion), inset 2px 2px 0 0 $color-white;
+
+    .gif-suggestion__button {
+        position: absolute;
+        bottom: 0.8rem;
+        left: 0.8rem;
+    }
+}
+
+.gif-div__image-sug {
+    position: relative;
+    margin: 0 0.2rem 0.2rem 0.2rem;
+    overflow: hidden;
+    height: 17.5rem;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        height: 17.5rem;
+        min-width: 17.5rem;
+    }
 }

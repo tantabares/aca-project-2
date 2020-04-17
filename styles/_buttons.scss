@@ -102,7 +102,7 @@
     }
 }
 
-.gif-suggestion-button {
+.gif-autocomplete-button {
     font: inherit;
     text-align: left;
     display: inherit;
@@ -138,6 +138,33 @@
         background-color: $color-night;
         border: 1px solid $color-night-border;
         box-shadow: inset -1px -1px 0 0 $color-shadow-theme, inset 1px 1px 0 0 $color-white;
+    }
+}
+
+.gif-button-blue {
+    height: 2.13rem;
+    align-content: center;
+    padding: 0 0.75rem 0rem 0.44rem;
+    font-family: inherit;
+    font-size: 0.88rem;
+    line-height: 2.13rem;
+    color: $color-font;
+
+    background: var(--color-primary-dark);
+    border: 1px solid $color-button-purple-shadow;
+    box-shadow: inset -1px -1px 0 0 $color-button-blue-shadow, inset 1px 1px 0 0 $color-white;
+
+    &:hover {
+        background: var(--button-blue-bg);
+        cursor: pointer;
+        outline: 1px dotted $color-font-dark;
+        outline-offset: -0.25rem;
+        border: 1px solid $color-button-purple-shadow;
+        box-shadow: inset -1px -1px 0 0 $color-button-blue-shadow, inset 1px 1px 0 0 $color-white;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 

@@ -1,0 +1,22 @@
+.gif-masonry {
+    columns: 4 17.5rem;
+    column-gap: 1rem;
+    height: 100%;
+
+    div {
+        margin: 0 0 1rem 0;
+        width: 17.5rem;
+        height: auto;
+
+        &:hover {
+            background: var(--box-color);
+            box-shadow: inset -2px -2px 0 0 var(--box-suggestion), inset 2px 2px 0 0 $color-white;
+        }
+        
+        img {
+            width: 17rem;
+            padding: 0.25rem;
+            vertical-align:top;
+        }
+    }
+}

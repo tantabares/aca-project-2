@@ -14,7 +14,7 @@
         <div class="gif-container">
             <div id="gifOS_header-cont" class="gif-header-cont">
                 <div class="gif-header__logo">
-                    <a href="http://www.google.com">
+                    <a href="/">
                         <img id="gifOS_page-logo" src="assets/gifOF_logo.png" alt="GifOS Logo">
                     </a>
                 </div>
@@ -85,39 +85,26 @@
                         </div>
                     </form>
                 </div>
-                <div id="gifOS_suggestions" class="gif-suggestions gif-container">
-                    <div id="gifOS_suggestions-items" class="gif-suggestions-items"></div>
+                <div id="gifOS_autocomplete" class="gif-autocomplete gif-container">
+                    <div id="gifOS_autocomplete-items" class="gif-autocomplete-items"></div>
                 </div>
             </div>
+            <div id="gifOS_sugg-buttons" class="gif-search__suggestions"></div>
         </div>
     </section>
 
-    <section class="gif-suggested">
+    <section id="gifOS_suggested-section" class="gif-suggested">
         <div class="gif-container">
             <div class="gif-section__title">Hoy te sugerimos:</div>
-            <div class="gif-suggestion-grid">
-                <div class="gif-suggestion">
-                    <div class="gif-div__title section-title">Title</div>
-                </div>
-
-                <div class="gif-suggestion">
-                    <div class="gif-div__title section-title">Title</div>
-                </div>
-
-                <div class="gif-suggestion">
-                    <div class="gif-div__title section-title">Title</div>
-                </div>
-
-                <div class="gif-suggestion">
-                    <div class="gif-div__title section-title">Title</div>
-                </div>
+            <div id="gifOS_suggested-grid" class="gif-suggestion-grid">
             </div>
         </div>
     </section>
 
     <section class="gif-trending">
         <div class="gif-container">
-            <div class="gif-section__title">Tendencias:</div>
+            <div id="gifOS_masonry-title" class="gif-section__title">Tendencias:</div>
+            <div id="gifOS_trending-masonry" class="gif-masonry"></div>
         </div>
     </section>
 

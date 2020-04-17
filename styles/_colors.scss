@@ -14,6 +14,7 @@
     @include defineColor(--section-title-border, #e6bbe2);
     @include defineColor(--section-title-shadow, #80687d);
     @include defineColor(--box-suggestion, #b4b4b4);
+    @include defineColor(--button-blue-bg, #3a72db);
 }
 
 @supports(--css: variables) {
@@ -33,5 +34,6 @@
         @include defineColor(--section-title-border, #2e32fb);
         @include defineColor(--section-title-shadow, #110038);
         @include defineColor(--box-suggestion, #5c5c5c);
-    }
+        @include defineColor(--button-blue-bg, #2629cc);
+}
 }

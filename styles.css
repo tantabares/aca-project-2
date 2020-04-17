@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap&subset=latin-ext");
-/* line 1, styles/_colors.scss */
 :root, [data-theme="default"] {
   --color-primary-light: #f7c9f3;
   --color-primary-dark: #4180f6;
@@ -14,10 +13,10 @@
   --button-color-theme-inac: #f0f0f0;
   --section-title-border: #e6bbe2;
   --section-title-shadow: #80687d;
-  --box-suggestion: #b4b4b4; }
+  --box-suggestion: #b4b4b4;
+  --button-blue-bg: #3a72db; }
 
 @supports (--css: variables) {
-  /* line 20, styles/_colors.scss */
   [data-theme="dark"] {
     --color-primary-light: #ee3efe;
     --color-primary-dark: #2e32fb;
@@ -32,20 +31,19 @@
     --button-color-theme-inac: #cccccc;
     --section-title-border: #2e32fb;
     --section-title-shadow: #110038;
-    --box-suggestion: #5c5c5c; } }
-/* line 1, styles/_main.scss */
+    --box-suggestion: #5c5c5c;
+    --button-blue-bg: #2629cc; } }
 * {
   margin: 0;
   padding: 0;
   border: none; }
 
-/* line 7, styles/_main.scss */
 body {
   font-family: "Chakra Petch", sans-serif;
   color: #ffffff;
-  background-color: var(--bg-color); }
+  background-color: var(--bg-color);
+  height: 100%; }
 
-/* line 13, styles/_main.scss */
 .gif-div__title {
   height: 1.5rem;
   box-shadow: 0 1px 0 0 #110038;
@@ -57,30 +55,25 @@ body {
   padding: 0 0 0 0.5rem;
   overflow: hidden; }
 
-/* line 26, styles/_main.scss */
 .section-title {
   font-size: 0.88rem;
   font-weight: 600;
   box-shadow: none;
   margin: 0.2rem; }
 
-/* line 33, styles/_main.scss */
 .gif-center-helper {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-/* line 39, styles/_main.scss */
 .gif-container {
   width: 85%;
   max-width: 74.63rem;
   margin: 0 auto; }
 
-/* line 45, styles/_main.scss */
 .gif-search, .gif-suggested, .gif-trending {
   margin: 0 0 4rem 0; }
 
-/* line 49, styles/_main.scss */
 .gif-section__title {
   height: 2rem;
   border: 1px solid var(--section-title-border);
@@ -93,7 +86,6 @@ body {
   padding: 0 0 0 0.5rem;
   margin: 0 0 1rem 0; }
 
-/* line 1, styles/_buttons.scss */
 .gif-button__main {
   background-color: var(--color-primary-light);
   border: 1px solid #110038;
@@ -105,29 +97,23 @@ body {
   color: var(--color-font);
   align-content: center;
   padding: 0 1.3rem; }
-  /* line 14, styles/_buttons.scss */
   .gif-button__main:hover {
     background-color: var(--main-button-hover);
     cursor: pointer;
     outline: 1px dotted #110038;
     outline-offset: -0.25rem;
     box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff; }
-  /* line 22, styles/_buttons.scss */
   .gif-button__main:focus {
     outline: none; }
-  /* line 26, styles/_buttons.scss */
   .gif-button__main .icon {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-    /* line 31, styles/_buttons.scss */
     .gif-button__main .icon svg {
       padding: 0 0.63rem 0 0; }
-      /* line 34, styles/_buttons.scss */
       .gif-button__main .icon svg #gifOS_resultados-de-busqueda {
         fill: var(--color-font); }
 
-/* line 41, styles/_buttons.scss */
 .clicked {
   background-color: var(--main-button-hover);
   cursor: pointer;
@@ -135,16 +121,13 @@ body {
   outline-offset: -0.25rem;
   box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff; }
 
-/* line 49, styles/_buttons.scss */
 .gif-button__inactive {
   color: var(--box-color-shadow1);
   background-color: var(--box-color);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
-  /* line 57, styles/_buttons.scss */
   .gif-button__inactive .icon svg #gifOS_resultados-de-busqueda {
     fill: var(--box-color-shadow1); }
-  /* line 63, styles/_buttons.scss */
   .gif-button__inactive:hover {
     outline: none;
     cursor: default;
@@ -152,18 +135,15 @@ body {
     background-color: var(--box-color);
     box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 73, styles/_buttons.scss */
 .gif-header-button:hover .gif-button__main {
   background-color: var(--main-button-hover);
   box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff;
   cursor: pointer;
   outline: 1px dotted #110038;
   outline-offset: -0.25rem; }
-/* line 81, styles/_buttons.scss */
 .gif-header-button:focus {
   outline: none; }
 
-/* line 86, styles/_buttons.scss */
 .gif-theme-button {
   font: inherit;
   text-align: left;
@@ -177,12 +157,10 @@ body {
   background: var(--button-color-theme-inac);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
-  /* line 100, styles/_buttons.scss */
   .gif-theme-button:hover {
     cursor: pointer; }
 
-/* line 105, styles/_buttons.scss */
-.gif-suggestion-button {
+.gif-autocomplete-button {
   font: inherit;
   text-align: left;
   display: inherit;
@@ -195,50 +173,63 @@ body {
   background: var(--button-color-theme-inac);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
-  /* line 119, styles/_buttons.scss */
-  .gif-suggestion-button:hover, .gif-suggestion-button:focus {
+  .gif-autocomplete-button:hover, .gif-autocomplete-button:focus {
     cursor: pointer;
     outline: 1px dotted #110038;
     outline-offset: -0.25rem;
     background-color: #dbdbdb; }
 
-/* line 128, styles/_buttons.scss */
 .gif-option-day:hover {
   background-color: #fff4fd;
   border: 1px solid #cca6c9;
   box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 136, styles/_buttons.scss */
 .gif-option-night:hover {
   color: #ffffff;
   background-color: #2e32fb;
   border: 1px solid rgba(51, 53, 143, 0.2);
   box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 144, styles/_buttons.scss */
+.gif-button-blue {
+  height: 2.13rem;
+  align-content: center;
+  padding: 0 0.75rem 0rem 0.44rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 2.13rem;
+  color: #ffffff;
+  background: var(--color-primary-dark);
+  border: 1px solid #4c2f99;
+  box-shadow: inset -1px -1px 0 0 #284f99, inset 1px 1px 0 0 #ffffff; }
+  .gif-button-blue:hover {
+    background: var(--button-blue-bg);
+    cursor: pointer;
+    outline: 1px dotted #110038;
+    outline-offset: -0.25rem;
+    border: 1px solid #4c2f99;
+    box-shadow: inset -1px -1px 0 0 #284f99, inset 1px 1px 0 0 #ffffff; }
+  .gif-button-blue:focus {
+    outline: none; }
+
 .droparrow {
   padding: 0;
   width: 2.25rem; }
-  /* line 149, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-b {
     fill: var(--color-font); }
-  /* line 153, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-w {
     fill: var(--color-font-r); }
 
-/* line 1, styles/_header.scss */
 .gif-header {
+  z-index: 5;
   margin: 0 0 1.5rem 0;
   position: sticky;
   top: 0;
   background-color: var(--bg-color); }
-  /* line 7, styles/_header.scss */
   .gif-header .gif-header-cont {
     margin: 2.19rem 0 0 0;
     display: flex;
     justify-content: space-between;
     position: relative; }
-    /* line 13, styles/_header.scss */
     .gif-header .gif-header-cont .gif-header-cont__right {
       position: absolute;
       display: flex;
@@ -248,11 +239,9 @@ body {
       top: 50%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
-      /* line 23, styles/_header.scss */
       .gif-header .gif-header-cont .gif-header-cont__right .gif-dropdown {
         position: relative;
         overflow: hidden; }
-        /* line 27, styles/_header.scss */
         .gif-header .gif-header-cont .gif-header-cont__right .gif-dropdown .gif-dropdown__options {
           position: absolute;
           width: 100%;
@@ -261,14 +250,11 @@ body {
           box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff;
           padding: 0 0 0.315rem 0;
           display: none; }
-        /* line 37, styles/_header.scss */
         .gif-header .gif-header-cont .gif-header-cont__right .gif-dropdown .show {
           display: block; }
-      /* line 42, styles/_header.scss */
       .gif-header .gif-header-cont .gif-header-cont__right .show {
         overflow: visible; }
 
-/* line 49, styles/_header.scss */
 .gif-header__link {
   height: 2.25rem;
   line-height: 2.25rem;
@@ -276,30 +262,24 @@ body {
   align-content: center;
   border: 1px solid transparent;
   padding: 0 0.2rem; }
-  /* line 57, styles/_header.scss */
   .gif-header__link:hover {
     cursor: pointer;
     outline: 1px dotted var(--color-font);
     outline-offset: -0.25rem; }
 
-/* line 64, styles/_header.scss */
 .bottom-line {
   border-bottom: solid 1px var(--main-button-hover-box); }
 
-/* line 1, styles/_search.scss */
 .gif-searchbox {
   background-color: var(--box-color);
   box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff;
   padding-top: 0.01rem; }
-  /* line 6, styles/_search.scss */
   .gif-searchbox .gif-searchform {
     padding: 0.75rem 1.2rem 1rem 1.2rem;
     box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 0 0 0 0 #ffffff; }
-    /* line 10, styles/_search.scss */
     .gif-searchbox .gif-searchform form {
       display: flex;
       justify-content: space-between; }
-      /* line 14, styles/_search.scss */
       .gif-searchbox .gif-searchform form input {
         max-width: 88%;
         width: 100%;
@@ -311,42 +291,76 @@ body {
         border: 1px solid #979797;
         box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
         color: #110038; }
-        /* line 27, styles/_search.scss */
         .gif-searchbox .gif-searchform form input::placeholder {
           color: #b4b4b4; }
-        /* line 31, styles/_search.scss */
         .gif-searchbox .gif-searchform form input:focus {
           outline: none; }
-      /* line 36, styles/_search.scss */
       .gif-searchbox .gif-searchform form .search {
         padding: 0 0.88rem 0 0.63rem;
         min-width: 6.5rem; }
-  /* line 43, styles/_search.scss */
-  .gif-searchbox .gif-suggestions {
+  .gif-searchbox .gif-autocomplete {
+    z-index: 2;
     display: none;
     position: absolute;
     overflow: auto;
     background-color: var(--box-color);
     box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 #ffffff; }
-    /* line 50, styles/_search.scss */
-    .gif-searchbox .gif-suggestions .gif-suggestions-items {
+    .gif-searchbox .gif-autocomplete .gif-autocomplete-items {
       padding: 1rem 8.3rem 0.37rem 1.2rem;
       max-width: 86.6%; }
-  /* line 56, styles/_search.scss */
   .gif-searchbox .show {
     display: block; }
 
-/* line 1, styles/_suggestions.scss */
+.gif-search__suggestions {
+  display: flex;
+  padding: 0.75rem 0 0 0; }
+  .gif-search__suggestions button {
+    margin: 0 0.5rem 0 0; }
+
 .gif-suggestion-grid {
   display: grid;
   grid-template-columns: calc(25% - 0.75rem) calc(25% - 0.75rem) calc(25% - 0.75rem) calc(25% - 0.75rem);
   gap: 1rem; }
 
-/* line 7, styles/_suggestions.scss */
 .gif-suggestion {
+  position: relative;
   max-width: 18rem;
   max-height: 19.56rem;
   background: var(--box-color);
   box-shadow: inset -2px -2px 0 0 var(--box-suggestion), inset 2px 2px 0 0 #ffffff; }
+  .gif-suggestion .gif-suggestion__button {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0.8rem; }
+
+.gif-div__image-sug {
+  position: relative;
+  margin: 0 0.2rem 0.2rem 0.2rem;
+  overflow: hidden;
+  height: 17.5rem; }
+  .gif-div__image-sug img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    height: 17.5rem;
+    min-width: 17.5rem; }
+
+.gif-masonry {
+  columns: 4 17.5rem;
+  column-gap: 1rem;
+  height: 100%; }
+  .gif-masonry div {
+    margin: 0 0 1rem 0;
+    width: 17.5rem;
+    height: auto; }
+    .gif-masonry div:hover {
+      background: var(--box-color);
+      box-shadow: inset -2px -2px 0 0 var(--box-suggestion), inset 2px 2px 0 0 #ffffff; }
+    .gif-masonry div img {
+      width: 17rem;
+      padding: 0.25rem;
+      vertical-align: top; }
 
 /*# sourceMappingURL=styles.css.map */

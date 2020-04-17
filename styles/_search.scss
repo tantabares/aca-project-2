@@ -40,14 +40,15 @@
         }
     }
 
-    .gif-suggestions {
+    .gif-autocomplete {
+        z-index: 2;
         display: none;
         position: absolute;
         overflow: auto;
         background-color: var(--box-color);
         box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 $color-white;
 
-        .gif-suggestions-items {
+        .gif-autocomplete-items {
             padding: 1rem 8.3rem 0.37rem 1.2rem;
             max-width: 86.6%;
         }
@@ -55,5 +56,14 @@
 
     .show {
         display: block;
+    }
+}
+
+.gif-search__suggestions {
+    display: flex;
+    padding: 0.75rem 0 0 0;
+
+    button {
+        margin: 0 0.5rem 0 0;
     }
 }
