@@ -9,6 +9,10 @@ body {
     color: $color-font;
     background-color: var(--bg-color);
     height: 100%;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .gif-div__title {
@@ -25,10 +29,16 @@ body {
 }
 
 .section-title {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.88rem;
     font-weight: 600;
     box-shadow: none;
     margin: 0.2rem;
+
+    img {
+        padding: 0 0.3rem 0 0;
+    }
 }
 
 .gif-center-helper {

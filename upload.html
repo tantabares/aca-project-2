@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gif.OS</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="default">
+    <header class="gif-header">
+        <div class="gif-div__title">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</div>
+        <div class="gif-container">
+            <div id="gifOS_header-cont" class="gif-header-cont">
+                <div class="gif-header__logo">
+                    <a id="gifOS_back-btn" href="javascript:history.back()">
+                        <img src="assets/arrow.svg" alt="Flecha página anterior">
+                    </a>
+                    <a href="/">
+                        <img id="gifOS_page-logo" src="assets/gifOF_logo.png" alt="GifOS Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="gif-upload__section">
+        <div class="gif-container">
+            <div id="gifOS_upload" class="gif-upload">
+                <div id="guifOS_upload-title" class="gif-div__title section-title">Crear Guifos</div>
+                <div id="gifOS_upload-body">
+                    <img class="gif-upload__icon" src="assets/window-img.png" alt="Imagen ventanita">
+                    <div class="gif-upload__text">
+                        <h4>Aquí podrás crear tus propios guifos</h4>
+                        <br>
+                        <p>
+                            Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. 
+                            Los pasos para crear tu guifo son:
+                            <br><br>
+                            <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                            <br><br>
+                            <b>2)</b> Capturar tu momento guifo
+                            <br><br>
+                            <b>3)</b> Revisar el momento
+                            <br><br>
+                            <b>4)</b> Listo para subir y compartir!
+                            <br><br>
+                            ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
+                        </p>
+                    </div>
+                    <div class="gif-upload__buttons">
+                        <div class="gif-header-button">
+                            <button onclick='window.location.href="index.html"' class="gif-button__main gif-upload-button clear">Cancelar</button>
+                        </div>
+                        <div class="gif-header-button">
+                            <button id="gifOS_start" class="gif-button__main gif-upload-button">Comenzar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gif-mygifs">
+        <div class="gif-container">
+            <div class="gif-section__title">Mis guifos</div>
+            <div id="gifOS_mygifs" class="gif-mygifs-masonry"></div>
+        </div>
+    </section>
+
+    <script type="module" src="js/upload.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+</html>

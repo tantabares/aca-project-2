@@ -24,6 +24,10 @@
     overflow: hidden;
     height: 17.5rem;
 
+    &:hover {
+            outline: 1px dotted $color-font-dark;
+        }
+
     img {
         position: absolute;
         left: 50%;

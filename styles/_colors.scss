@@ -15,6 +15,10 @@
     @include defineColor(--section-title-shadow, #80687d);
     @include defineColor(--box-suggestion, #b4b4b4);
     @include defineColor(--button-blue-bg, #3a72db);
+    @include defineColor(--button-cancel-color, #fff4fd);
+    @include defineColor(--button-cancel-color-hover, #f0e5ee);
+    @include defineColor(--button-cancel-hover-box, #997d97);
+    @include defineColor(--button-cancel-shadow, #ffffff);
 }
 
 @supports(--css: variables) {
@@ -35,5 +39,9 @@
         @include defineColor(--section-title-shadow, #110038);
         @include defineColor(--box-suggestion, #5c5c5c);
         @include defineColor(--button-blue-bg, #2629cc);
-}
+        @include defineColor(--button-cancel-color, #110038);
+        @include defineColor(--button-cancel-color-hover, #110038);
+        @include defineColor(--button-cancel-hover-box, #5c5c5c);
+        @include defineColor(--button-cancel-shadow, #fff4fd);
+    }
 }

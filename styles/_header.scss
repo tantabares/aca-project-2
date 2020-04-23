@@ -11,6 +11,14 @@
         justify-content: space-between;
         position: relative;
 
+        .gif-header__logo {
+            #gifOS_back-btn {
+                position: absolute;
+                bottom: 0.6rem;
+                left: -2.5rem;
+            }
+        }
+
         .gif-header-cont__right {
             position: absolute;
             display: flex;

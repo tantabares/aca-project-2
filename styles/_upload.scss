@@ -1,0 +1,78 @@
+.gif-upload {
+    background-color: var(--box-color);
+    box-shadow: inset -2px -2px 0 0 var(--box-color-shadow1), inset 2px 2px 0 0 $color-white;
+    padding-top: 0.01rem;
+    width: 57%;
+    max-width: 42.75rem;
+    margin: 4.69rem auto 9.56rem;
+
+    #gifOS_upload-body {
+        position: relative;
+
+        .gif-upload-video__container {
+            height: 26.87rem;
+            overflow: hidden;
+            margin: 1rem;
+            border: 1px solid #979797;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+
+            video, img {
+                width: -moz-available; 
+                width: -webkit-fill-available;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                -webkit-transform: translateY(-50%) translateX(-50%);
+            }
+        }
+
+        .gif-upload__icon {
+            position: absolute;
+            top: 1.88rem;
+            left: 1.56rem;
+        }
+    
+        .gif-upload__text {
+            color: $color-font-dark;
+            padding: 1.88rem 5.61rem 0 4.56rem;
+    
+            p {
+                font-size: 0.88rem;
+                line-height: 1.15rem;
+                letter-spacing: 0;
+            }
+        }
+    
+        .gif-upload__buttons {
+            padding: 1.75rem 2.25rem 2.25rem 0;
+            display: flex;
+            justify-content: flex-end;
+    
+            .gif-upload-button {
+                width: 9rem;
+                margin: 0 0 0 1rem;
+            }
+    
+            .clear {
+                background-color: var(--button-cancel-color);
+                box-shadow: inset -1px -1px 0 0 var(--button-cancel-hover-box), inset 1px 1px 0 0 var(--button-cancel-shadow);
+    
+                &:hover {
+                    outline: 1px dotted var(--color-font);
+                    outline-offset: -0.25rem;
+                    background-color: var(--button-cancel-color-hover);
+                }
+            }
+
+            .listo {
+                color: $color-font;
+                background-color: $color-button-listo;
+            }
+        }
+
+        .record {
+            outline: 3px dotted $color-button-listo;
+        }
+    }
+}
