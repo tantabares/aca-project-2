@@ -63,10 +63,23 @@
     border: 1px solid transparent;
     padding: 0 0.2rem;
 
+    a {
+        color: inherit;
+    }
+
     &:hover {
         cursor: pointer;
         outline: 1px dotted var(--color-font);
         outline-offset: -0.25rem;
+    }
+}
+
+.clicked-link {
+    color: $color-sbox-placeholder;
+
+    &:hover {
+        cursor: default;
+        outline: none;
     }
 }
 

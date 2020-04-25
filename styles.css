@@ -326,12 +326,23 @@ body {
   border: 1px solid transparent;
   padding: 0 0.2rem; }
   /* line 66, styles/_header.scss */
+  .gif-header__link a {
+    color: inherit; }
+  /* line 70, styles/_header.scss */
   .gif-header__link:hover {
     cursor: pointer;
     outline: 1px dotted var(--color-font);
     outline-offset: -0.25rem; }
 
-/* line 73, styles/_header.scss */
+/* line 77, styles/_header.scss */
+.clicked-link {
+  color: #b4b4b4; }
+  /* line 80, styles/_header.scss */
+  .clicked-link:hover {
+    cursor: default;
+    outline: none; }
+
+/* line 86, styles/_header.scss */
 .bottom-line {
   border-bottom: solid 1px var(--main-button-hover-box); }
 
@@ -487,11 +498,9 @@ body {
     .gif-upload #gifOS_upload-body .gif-upload-video__container {
       height: 26.87rem;
       overflow: hidden;
-      margin: 1rem;
-      border: 1px solid #979797;
-      box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
-      /* line 19, styles/_upload.scss */
-      .gif-upload #gifOS_upload-body .gif-upload-video__container video, .gif-upload #gifOS_upload-body .gif-upload-video__container img {
+      margin: 1rem; }
+      /* line 17, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-upload-video__container .full-width {
         width: -moz-available;
         width: -webkit-fill-available;
         position: relative;
@@ -499,44 +508,88 @@ body {
         top: 50%;
         transform: translateY(-50%) translateX(-50%);
         -webkit-transform: translateY(-50%) translateX(-50%); }
-    /* line 30, styles/_upload.scss */
+    /* line 28, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .gif-upload__confirm {
+      background-color: #ffffff;
+      color: #110038;
+      height: 100%;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #110038; }
+      /* line 35, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-upload__confirm .icon {
+        margin: 8.69rem auto 0.5rem auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%); }
+      /* line 43, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-upload__confirm h4 {
+        width: 13.5em;
+        margin: 0 auto; }
+      /* line 48, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-upload__confirm p {
+        margin: 4.44rem auto 0 auto;
+        width: 14.56rem;
+        font-size: 0.75rem; }
+    /* line 55, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-upload__icon {
       position: absolute;
       top: 1.88rem;
       left: 1.56rem; }
-    /* line 36, styles/_upload.scss */
+    /* line 61, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-upload__text {
       color: #110038;
       padding: 1.88rem 5.61rem 0 4.56rem; }
-      /* line 40, styles/_upload.scss */
+      /* line 65, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__text p {
         font-size: 0.88rem;
         line-height: 1.15rem;
         letter-spacing: 0; }
-    /* line 47, styles/_upload.scss */
+    /* line 72, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-upload__buttons {
       padding: 1.75rem 2.25rem 2.25rem 0;
       display: flex;
       justify-content: flex-end; }
-      /* line 52, styles/_upload.scss */
+      /* line 77, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__buttons .gif-upload-button {
         width: 9rem;
         margin: 0 0 0 1rem; }
-      /* line 57, styles/_upload.scss */
-      .gif-upload #gifOS_upload-body .gif-upload__buttons .clear {
-        background-color: var(--button-cancel-color);
-        box-shadow: inset -1px -1px 0 0 var(--button-cancel-hover-box), inset 1px 1px 0 0 var(--button-cancel-shadow); }
-        /* line 61, styles/_upload.scss */
-        .gif-upload #gifOS_upload-body .gif-upload__buttons .clear:hover {
-          outline: 1px dotted var(--color-font);
-          outline-offset: -0.25rem;
-          background-color: var(--button-cancel-color-hover); }
-      /* line 68, styles/_upload.scss */
+      /* line 82, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__buttons .listo {
         color: #ffffff;
         background-color: #ff6161; }
-    /* line 74, styles/_upload.scss */
+    /* line 88, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .gif-flex-div {
+      display: flex;
+      justify-content: space-between; }
+      /* line 92, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload {
+        color: #110038;
+        margin: 2rem 2rem 0 0;
+        width: 40%;
+        max-width: 16rem; }
+        /* line 98, styles/_upload.scss */
+        .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload h4 {
+          margin: 1.5rem 0 1rem 0; }
+        /* line 102, styles/_upload.scss */
+        .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload button {
+          width: 100%;
+          margin-bottom: 0.88rem;
+          overflow: hidden; }
+    /* line 110, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .clear {
+      background-color: var(--button-cancel-color);
+      box-shadow: inset -1px -1px 0 0 var(--button-cancel-hover-box), inset 1px 1px 0 0 var(--button-cancel-shadow); }
+      /* line 114, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .clear:hover {
+        outline: 1px dotted var(--color-font);
+        outline-offset: -0.25rem;
+        background-color: var(--button-cancel-color-hover); }
+    /* line 121, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .record {
       outline: 3px dotted #ff6161; }
+    /* line 125, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .hidden {
+      display: none; }
 
 /*# sourceMappingURL=styles.css.map */
