@@ -171,18 +171,21 @@ body {
     background-color: var(--box-color);
     box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 73, styles/_buttons.scss */
-.gif-header-button:hover .gif-button__main {
-  background-color: var(--main-button-hover);
-  box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff;
-  cursor: pointer;
-  outline: 1px dotted #110038;
-  outline-offset: -0.25rem; }
-/* line 81, styles/_buttons.scss */
-.gif-header-button:focus {
-  outline: none; }
+/* line 72, styles/_buttons.scss */
+.gif-header-button {
+  overflow: hidden; }
+  /* line 75, styles/_buttons.scss */
+  .gif-header-button:hover .gif-button__main {
+    background-color: var(--main-button-hover);
+    box-shadow: inset -1px -1px 0 0 var(--main-button-hover-box), inset 1px 1px 0 0 #ffffff;
+    cursor: pointer;
+    outline: 1px dotted #110038;
+    outline-offset: -0.25rem; }
+  /* line 83, styles/_buttons.scss */
+  .gif-header-button:focus {
+    outline: none; }
 
-/* line 86, styles/_buttons.scss */
+/* line 88, styles/_buttons.scss */
 .gif-theme-button {
   font: inherit;
   text-align: left;
@@ -196,11 +199,11 @@ body {
   background: var(--button-color-theme-inac);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
-  /* line 100, styles/_buttons.scss */
+  /* line 102, styles/_buttons.scss */
   .gif-theme-button:hover {
     cursor: pointer; }
 
-/* line 105, styles/_buttons.scss */
+/* line 107, styles/_buttons.scss */
 .gif-autocomplete-button {
   font: inherit;
   text-align: left;
@@ -214,27 +217,27 @@ body {
   background: var(--button-color-theme-inac);
   border: 1px solid #808080;
   box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
-  /* line 119, styles/_buttons.scss */
+  /* line 121, styles/_buttons.scss */
   .gif-autocomplete-button:hover, .gif-autocomplete-button:focus {
     cursor: pointer;
     outline: 1px dotted #110038;
     outline-offset: -0.25rem;
     background-color: #dbdbdb; }
 
-/* line 128, styles/_buttons.scss */
+/* line 130, styles/_buttons.scss */
 .gif-option-day:hover {
   background-color: #fff4fd;
   border: 1px solid #cca6c9;
   box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 136, styles/_buttons.scss */
+/* line 138, styles/_buttons.scss */
 .gif-option-night:hover {
   color: #ffffff;
   background-color: #2e32fb;
   border: 1px solid rgba(51, 53, 143, 0.2);
   box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff; }
 
-/* line 144, styles/_buttons.scss */
+/* line 146, styles/_buttons.scss */
 .gif-button-blue {
   height: 2.13rem;
   align-content: center;
@@ -246,7 +249,7 @@ body {
   background: var(--color-primary-dark);
   border: 1px solid #4c2f99;
   box-shadow: inset -1px -1px 0 0 #284f99, inset 1px 1px 0 0 #ffffff; }
-  /* line 157, styles/_buttons.scss */
+  /* line 159, styles/_buttons.scss */
   .gif-button-blue:hover {
     background: var(--button-blue-bg);
     cursor: pointer;
@@ -254,18 +257,18 @@ body {
     outline-offset: -0.25rem;
     border: 1px solid #4c2f99;
     box-shadow: inset -1px -1px 0 0 #284f99, inset 1px 1px 0 0 #ffffff; }
-  /* line 166, styles/_buttons.scss */
+  /* line 168, styles/_buttons.scss */
   .gif-button-blue:focus {
     outline: none; }
 
-/* line 171, styles/_buttons.scss */
+/* line 173, styles/_buttons.scss */
 .droparrow {
   padding: 0;
   width: 2.25rem; }
-  /* line 176, styles/_buttons.scss */
+  /* line 178, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-b {
     fill: var(--color-font); }
-  /* line 180, styles/_buttons.scss */
+  /* line 182, styles/_buttons.scss */
   .droparrow svg #gifOS_arrow-w {
     fill: var(--color-font-r); }
 
@@ -528,8 +531,8 @@ body {
         margin: 0 auto; }
       /* line 48, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__confirm p {
-        margin: 4.44rem auto 0 auto;
-        width: 14.56rem;
+        margin: 0.5rem auto 0 auto;
+        width: 15.2rem;
         font-size: 0.75rem; }
     /* line 55, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-upload__icon {
@@ -546,50 +549,92 @@ body {
         line-height: 1.15rem;
         letter-spacing: 0; }
     /* line 72, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .gif-upload__timer {
+      width: 4rem;
+      height: 2.25rem;
+      line-height: 2.25rem;
+      color: #110038;
+      padding: 0 1rem;
+      background: #ffffff;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #110038; }
+    /* line 83, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-upload__buttons {
       padding: 1.75rem 2.25rem 2.25rem 0;
       display: flex;
       justify-content: flex-end; }
-      /* line 77, styles/_upload.scss */
+      /* line 88, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__buttons .gif-upload-button {
         width: 9rem;
         margin: 0 0 0 1rem; }
-      /* line 82, styles/_upload.scss */
+      /* line 93, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-upload__buttons .listo {
         color: #ffffff;
         background-color: #ff6161; }
-    /* line 88, styles/_upload.scss */
+    /* line 99, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .gif-flex-div {
       display: flex;
       justify-content: space-between; }
-      /* line 92, styles/_upload.scss */
+      /* line 103, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload {
         color: #110038;
         margin: 2rem 2rem 0 0;
         width: 40%;
         max-width: 16rem; }
-        /* line 98, styles/_upload.scss */
+        /* line 109, styles/_upload.scss */
         .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload h4 {
           margin: 1.5rem 0 1rem 0; }
-        /* line 102, styles/_upload.scss */
+        /* line 113, styles/_upload.scss */
         .gif-upload #gifOS_upload-body .gif-flex-div .gif-final-upload button {
           width: 100%;
           margin-bottom: 0.88rem;
           overflow: hidden; }
-    /* line 110, styles/_upload.scss */
+    /* line 121, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .clear {
       background-color: var(--button-cancel-color);
       box-shadow: inset -1px -1px 0 0 var(--button-cancel-hover-box), inset 1px 1px 0 0 var(--button-cancel-shadow); }
-      /* line 114, styles/_upload.scss */
+      /* line 125, styles/_upload.scss */
       .gif-upload #gifOS_upload-body .clear:hover {
         outline: 1px dotted var(--color-font);
         outline-offset: -0.25rem;
         background-color: var(--button-cancel-color-hover); }
-    /* line 121, styles/_upload.scss */
+    /* line 132, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .record {
       outline: 3px dotted #ff6161; }
-    /* line 125, styles/_upload.scss */
+    /* line 136, styles/_upload.scss */
     .gif-upload #gifOS_upload-body .hidden {
       display: none; }
+    /* line 140, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body .gif-progressbar {
+      width: 20.25rem;
+      height: 1.5rem;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #110038;
+      margin: 2.44rem auto 0 auto;
+      display: flex;
+      padding: 0.1rem 0.1rem 0 0.1rem; }
+      /* line 149, styles/_upload.scss */
+      .gif-upload #gifOS_upload-body .gif-progressbar div {
+        width: 0.75rem;
+        height: 1.4rem;
+        background-color: #979797;
+        border-right: 0.13rem solid #b4b4b4; }
+    /* line 157, styles/_upload.scss */
+    .gif-upload #gifOS_upload-body #gif-toggle {
+      font-size: 3rem;
+      position: absolute;
+      bottom: 5rem;
+      left: 3rem;
+      color: #ff6161;
+      text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff; }
+
+/* line 169, styles/_upload.scss */
+.gif-nogifs {
+  margin-top: 3rem;
+  display: none; }
+  /* line 173, styles/_upload.scss */
+  .gif-nogifs h1 {
+    text-align: center;
+    color: var(--color-font); }
 
 /*# sourceMappingURL=styles.css.map */

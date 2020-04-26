@@ -46,8 +46,8 @@
             }
 
             p {
-                margin: 4.44rem auto 0 auto;
-                width: 14.56rem;
+                margin: 0.5rem auto 0 auto;
+                width: 15.2rem;
                 font-size: 0.75rem;
             }
         }
@@ -67,6 +67,17 @@
                 line-height: 1.15rem;
                 letter-spacing: 0;
             }
+        }
+        
+        .gif-upload__timer {
+            width: 4rem;
+            height: 2.25rem;
+            line-height: 2.25rem;
+            color: $color-font-dark;
+            padding: 0 1rem;
+            background: $color-white;
+            border: 1px solid $color-sbox-border;
+            box-shadow: inset -2px -2px 0 0 $color-sbox-shadow, inset 2px 2px 0 0 $color-font-dark;
         }
     
         .gif-upload__buttons {
@@ -125,5 +136,42 @@
         .hidden {
             display: none;
         }
+
+        .gif-progressbar {
+            width: 20.25rem;
+            height: 1.5rem;
+            border: 1px solid $color-sbox-border;
+            box-shadow: inset -2px -2px 0 0 $color-sbox-shadow, inset 2px 2px 0 0 $color-font-dark;
+            margin: 2.44rem auto 0 auto;
+            display: flex;
+            padding: 0.1rem 0.1rem 0 0.1rem;
+
+            div {
+                width: 0.75rem;
+                height: 1.4rem;
+                background-color: $color-sbox-border;
+                border-right: 0.13rem solid $color-sbox-placeholder;
+            }
+        }
+
+        #gif-toggle {
+            font-size: 3rem;
+            position: absolute;
+            bottom: 5rem;
+            left: 3rem;
+            color: $color-button-listo;
+            text-shadow: -1px 0 $color-white, 0 1px $color-white, 1px 0 $color-white, 0 -1px $color-white;
+        }
+    }
+}
+
+
+.gif-nogifs {
+    margin-top: 3rem;
+    display: none;
+
+    h1 {
+        text-align: center;
+        color: var(--color-font);
     }
 }

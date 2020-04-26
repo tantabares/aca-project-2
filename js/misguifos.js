@@ -59,21 +59,21 @@ gifOs.functions.populateMisGuifos = function() {
                 return response.json()
             }).then(arr => {
                 if(arr.data.length > 0) {
+                    document.getElementById('gifOS_nogifs').style.display = 'none'
                     max = arr.data.length
                     for(let i = 0; i < max; i++)
                         html += `<div class="gif-masonry__gif"> 
                                         <img src="${arr.data[i].images.fixed_width.webp}" alt="${arr.data[i].title}">
                                     </div>`
-        
                     gifOs.constants.MYGIFS_MASONRY.innerHTML = html
                 } else {
-                    //no gifs
+                    document.getElementById('gifOS_nogifs').style.display = 'block'
                 }
             }).catch((error) => {
                 return error
             })
     } else {
-        //no gifs
+        document.getElementById('gifOS_nogifs').style.display = 'block'
     }
 }
 

@@ -36,6 +36,11 @@ export default class GifRequests {
         return found
     }
 
+    getGifById(id) {
+        const found = fetch(`${this.GIPHY_LIST}/${id}?api_key=${this.API_KEY}`)
+        return found
+    }
+
     upload(blob) {
         let form = new FormData();
         form.append('api_key', this.API_KEY)
