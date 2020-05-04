@@ -1,6 +1,3 @@
-import Utils from './Utils.js'
-import GifRequests from './GifRequests.js'
-
 var gifOs = gifOs || {}
 gifOs.constants = gifOs.constants || {}
 gifOs.functions = gifOs.functions || {}

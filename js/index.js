@@ -1,6 +1,3 @@
-import Utils from './Utils.js'
-import GifRequests from './GifRequests.js'
-
 var gifOs = gifOs || {}
 gifOs.constants = gifOs.constants || {}
 gifOs.functions = gifOs.functions || {}
@@ -71,7 +68,7 @@ gifOs.functions.populateAutocomplete = function (val) {
         if(arr.data.length > 0) {
             max = arr.data.length < max ? arr.data.length : max
             for(let i = 0; i < max; i++)
-                html += `<button onclick="window.location.href = '/?search=${hashtag ? '%23' + arr.data[i].name.replace(' ', '') : arr.data[i].name}';" 
+                html += `<button onclick="window.location.href = './index.html?search=${hashtag ? '%23' + arr.data[i].name.replace(' ', '') : arr.data[i].name}';" 
                         class="gif-autocomplete-button">${hashtag ? '#' + arr.data[i].name.replace(' ', '') : arr.data[i].name}</button>`
 
             gifOs.constants.SEARCH_AUTOCOMPLETE_ITEMS.innerHTML = html
@@ -99,13 +96,13 @@ gifOs.functions.populateSuggestions = function() {
             if(arr.data)
                 html += `<div class="gif-suggestion">
                             <div class="gif-div__title section-title">#${el.replace(' ', '')}
-                                <img src="../assets/button3.svg">
+                                <img src="./assets/button3.svg">
                             </div> 
                             <div class="gif-div__image-sug">
                                 <img src=${arr.data.images.fixed_width.webp} alt=${arr.data.title}>
                             </div> 
                             <div class="gif-suggestion__button">
-                                <button class="gif-button-blue" onclick="window.location.href = '/?search=%23${el.replace(' ', '')}'">Ver mas...</button>
+                                <button class="gif-button-blue" onclick="window.location.href = './index.html?search=%23${el.replace(' ', '')}'">Ver mas...</button>
                             </div>
                         </div>`
 
@@ -244,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gifOs.functions.toggleButton()
 
         gifOs.constants.SUGGESTED_TOPICS.forEach(el => {
-            html += `<button class="gif-button-blue" onclick='window.location.href = "/?search=%23${el}"'>#${el}</button>`
+            html += `<button class="gif-button-blue" onclick='window.location.href = "./index.html?search=%23${el}"'>#${el}</button>`
         });
 
         gifOs.constants.SEARCH_SUGGESTION_BUTTONS.innerHTML = html

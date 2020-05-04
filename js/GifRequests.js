@@ -1,4 +1,4 @@
-export default class GifRequests {
+class GifRequests {
 
     constructor() {
         this.API_KEY = 'xkRLMi34NB01NmAjfZauXpHGiJQAwtIo'

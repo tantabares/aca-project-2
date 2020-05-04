@@ -17,7 +17,7 @@
                     <a id="gifOS_back-btn" href="javascript:history.back()">
                         <img src="assets/arrow.svg" alt="Flecha página anterior">
                     </a>
-                    <a href="/">
+                    <a href="./index.html">
                         <img id="gifOS_page-logo" src="assets/gifOF_logo.png" alt="GifOS Logo">
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                     <!-- Step 0 (Instructions) -->
                     <div id="gifOS_step0" class="gif-upload__buttons">
                         <div class="gif-header-button">
-                            <button onclick='window.location.href="index.html"' class="gif-button__main gif-upload-button clear">Cancelar</button>
+                            <button onclick='window.location.href="./index.html"' class="gif-button__main gif-upload-button clear">Cancelar</button>
                         </div>
                         <div class="gif-header-button">
                             <button id="gifOS_start" class="gif-button__main gif-upload-button">Comenzar</button>
@@ -116,13 +116,13 @@
                     <!-- Step 4 (Confirmation) -->
                     <div id="gifOS_step4" class="gif-upload__buttons hidden" style="padding: 0 1rem 1rem 0;">
                         <div class="gif-header-button">
-                            <button onclick='window.location.href="upload.html"' class="gif-button__main gif-upload-button clear">Cancelar</button>
+                            <button onclick='window.location.href="./upload.html"' class="gif-button__main gif-upload-button clear">Cancelar</button>
                         </div>
                     </div>
                     <!-- Step 5 (Return) -->
                     <div id="gifOS_step5" class="gif-upload__buttons hidden" style="padding: 3.8rem 2rem 2rem 0;">
                         <div class="gif-header-button">
-                            <button onclick='window.location.href="misguifos.html"' class="gif-button__main gif-upload-button">Listo</button>
+                            <button onclick='window.location.href="./misguifos.html"' class="gif-button__main gif-upload-button">Listo</button>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,9 @@
         </div>
     </section>
 
-    <script type="module" src="js/upload.js"></script>
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/GifRequests.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 </body>
 </html>
